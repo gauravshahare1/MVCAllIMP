@@ -1,0 +1,47 @@
+﻿@model AreaWalaProject.Areas.Admin.Models.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+    
+}
+
+<h1>Login Here</h1>
+
+@* @{
+    string message = " Login View Value";
+    ViewData["Message"] =(object) message;
+    // ViewBag.msg = message;
+} *@
+
+<h3> @TempData["commonData"]</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <input type="hidden" id="website" name="website" value="Ghassah" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="userName" class="control-label"></label>
+                <input asp-for="userName" class="form-control" />
+                <span asp-validation-for="userName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a> 
+    <a asp-action="Welcome" asp-route-id="10" asp-route-name="Ghaash" asp-route-age="1">Welcome Page</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

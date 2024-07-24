@@ -1,0 +1,25 @@
+﻿@using AreaWalaProject.Areas.Admin.Models;
+@using System.Text.Json;
+
+<h1> Admin Dashboard</h1>
+<h2>@ViewBag.CD</h2>
+
+<a asp-area="User" asp-controller="User" asp-action="Index">User Dashboard</a>
+<hr />
+<h3> User Details</h3
+
+@{
+    LoginModel user =
+            JsonSerializer.Deserialize<LoginModel>(TempData.Peek("user").ToString());
+
+ }
+    
+    <p>UserName: @user.userName</p>
+    <p>PassWord: @user.Password</p>
+
+    <h3>Cookies DemoUserName : @ViewBag.CookieData</h3>
+
+    <hr />
+    <h3> UserName Cookie : @ViewBag.userDetails.userName <br /> Password : @ViewBag.userDetails.Password </h3>
+    <hr />
+    <h3>Session UserName : @ViewBag.SessionName</h3>

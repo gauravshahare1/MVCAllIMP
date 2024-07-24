@@ -1,0 +1,19 @@
+﻿<script>
+    var broweserName = navigator.userAgent.toLowerCase();
+    if (broweserName.indexOf('chrome') > -1) {
+        @Layout="_Layout";
+    }
+    else {
+        @Layout="_Myview"
+    }
+</script>
+
+
+
+
+
+@{
+//     Layout = "_Layout";
+    Layout = "_Myview";
+}
+}

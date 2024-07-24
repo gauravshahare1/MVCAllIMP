@@ -1,0 +1,30 @@
+﻿@model ProductModel
+
+<h2> Product Details</h2>
+
+<table border="1">
+    <tr>
+        <td>
+            @Html.DisplayNameFor(Model => Model.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(Model => Model.Name)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayNameFor(Model => Model.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(Model => Model.Price)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayNameFor(Model => Model.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(Model => Model.CategoryName)
+        </td>
+    </tr>
+</table>

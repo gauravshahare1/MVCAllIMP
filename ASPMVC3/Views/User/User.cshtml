@@ -1,0 +1,44 @@
+﻿@model IEnumerable<UserModel>
+
+<h2> @ViewBag.Name</h2>
+<br />
+<h3> @ViewData["email"]</h3>
+
+
+<br />
+************************************************************
+<br />
+
+
+<h1>   @ViewData["Name"]</h1>
+<h1>  @ViewBag.email</h1>
+
+<br />
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @* @foreach (UserModel USER in (List<UserModel>)ViewData["Users"])
+        {
+            <tr>
+                <td>@USER.Name</td>
+                <td>@USER.Email</td>
+            </tr>
+        } *@
+
+        @foreach (UserModel USER in Model)
+        {
+            <tr>
+                <td>@USER.Name</td>
+                <td>@USER.Email</td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+﻿<h1> Razor Page</h1>
+
+<form>
+    Name : <input type="text"/>
+    <br/>
+    <a href="Swinal"> Login</a>
+</form>
+
+<ul>
+    <li>   1</li>
+    <li>   2</li>
+    <li>   3</li>
+    <li>   4</li>
+    <li>   5</li>
+</ul>
+
+@{
+    List<string> names = new List<string>()
+    {
+    "Vishal", "Mahesh", "Ravi"
+    };
+}
+
+<ol>
+    @foreach(string NAME in names)
+    {
+        <li> @NAME</li>
+    }
+</ol>
