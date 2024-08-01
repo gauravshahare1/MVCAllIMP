@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaWalaProject", "AreaWala
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1", "Task1\Task1.csproj", "{A620C19F-4312-4351-94C1-EFC36C62E16D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationDemo", "ValidationDemo\ValidationDemo.csproj", "{8BCFB256-1953-4651-94BE-5F1659CB53AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationDemo", "ValidationDemo\ValidationDemo.csproj", "{8BCFB256-1953-4651-94BE-5F1659CB53AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterDemo", "FilterDemo\FilterDemo.csproj", "{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{8BCFB256-1953-4651-94BE-5F1659CB53AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BCFB256-1953-4651-94BE-5F1659CB53AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BCFB256-1953-4651-94BE-5F1659CB53AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
