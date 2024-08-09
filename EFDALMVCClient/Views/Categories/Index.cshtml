@@ -1,0 +1,36 @@
+﻿@using EFDAL.Entities;
+@model IEnumerable<EFDAL.Entities.Category>
+
+@if(Model != null && Model.Count() > 0)
+{
+    <h3> All category</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Category ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Category category in Model)
+            {
+                <tr>
+                    <td> @category.CategoryId</td>
+                    <td> @category.Name</td>
+                    <td> @category.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3> NO Category Avilable</h3>
+}

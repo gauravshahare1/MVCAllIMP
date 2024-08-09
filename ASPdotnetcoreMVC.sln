@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task1", "Task1\Task1.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationDemo", "ValidationDemo\ValidationDemo.csproj", "{8BCFB256-1953-4651-94BE-5F1659CB53AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterDemo", "FilterDemo\FilterDemo.csproj", "{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterDemo", "FilterDemo\FilterDemo.csproj", "{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDAL", "EFDAL\EFDAL.csproj", "{84E53830-92A2-4B29-97E9-4D08D33A5852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDALMVCClient", "EFDALMVCClient\EFDALMVCClient.csproj", "{6D592994-3FD7-4BFD-9DC6-D3657D68A6FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{125FD9E4-6FC8-4DBE-884F-BCAD44B98FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E53830-92A2-4B29-97E9-4D08D33A5852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E53830-92A2-4B29-97E9-4D08D33A5852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E53830-92A2-4B29-97E9-4D08D33A5852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E53830-92A2-4B29-97E9-4D08D33A5852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D592994-3FD7-4BFD-9DC6-D3657D68A6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D592994-3FD7-4BFD-9DC6-D3657D68A6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D592994-3FD7-4BFD-9DC6-D3657D68A6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D592994-3FD7-4BFD-9DC6-D3657D68A6FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
