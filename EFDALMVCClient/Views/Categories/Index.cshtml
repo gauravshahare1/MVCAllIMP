@@ -3,8 +3,9 @@
 
 @if(Model != null && Model.Count() > 0)
 {
+    <a asp-action="Create"> Create New</a>
     <h3> All category</h3>
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>
@@ -16,6 +17,9 @@
                 <th>
                     Description
                 </th>
+                <th>
+                    Actions
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +29,8 @@
                     <td> @category.CategoryId</td>
                     <td> @category.Name</td>
                     <td> @category.Description</td>
+                    <td> @Html.ActionLink("Details","Details",new{Id = category.CategoryId})</td>
+                    <td> @Html.ActionLink("Delete","Delete",new{Id = category.CategoryId})</td>
                 </tr>
             }
         </tbody>
